@@ -1,6 +1,7 @@
 project "Sandbox"
 	kind "ConsoleApp"
 	language "C++"
+	staticruntime "On"
 	dependson { "Proton Engine" }
 
 	targetdir (solutionDir .. "/bin/" .. outputdir .. "/%{prj.name}")

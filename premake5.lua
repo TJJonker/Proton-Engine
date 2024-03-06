@@ -17,7 +17,7 @@ includeDirs["GLFW"] = "vendor/glfw/include"
 includeDirs["GLM"] = "vendor/glm"
 includeDirs["SPDLOG"] = "vendor/spdlog/include"
 includeDirs["ASSIMP"] = "vendor/assimp/include"
-includeDirs["PROTON"] = "Proton Engine"
+includeDirs["PROTON"] = "Proton Engine/include"
 
 libraryDirs = {}
 libraryDirs["ASSIMP"] = "vendor/assimp/libs/%{cfg.buildcfg}"

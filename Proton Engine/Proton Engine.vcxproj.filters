@@ -4,18 +4,30 @@
     <Filter Include="include">
       <UniqueIdentifier>{89AF369E-F58E-B539-FEA6-40106A051C9B}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\Core">
+      <UniqueIdentifier>{81F1C769-6D54-570E-16DA-8FC4021C2391}</UniqueIdentifier>
+    </Filter>
     <Filter Include="src">
       <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Core">
+      <UniqueIdentifier>{A5D31CCF-91A0-77DA-BAB9-6582A6E5AC68}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\EntryPoint.h">
+    <ClInclude Include="include\Core\Application.h">
+      <Filter>include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Core\EntryPoint.h">
+      <Filter>include\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Proton.h">
       <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\EntryPoint.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="src\Core\Application.cpp">
+      <Filter>src\Core</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

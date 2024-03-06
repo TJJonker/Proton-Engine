@@ -143,10 +143,12 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="include\EntryPoint.h" />
+    <ClInclude Include="include\Core\Application.h" />
+    <ClInclude Include="include\Core\EntryPoint.h" />
+    <ClInclude Include="include\Proton.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\EntryPoint.cpp" />
+    <ClCompile Include="src\Core\Application.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\vendor\glfw\GLFW.vcxproj">
