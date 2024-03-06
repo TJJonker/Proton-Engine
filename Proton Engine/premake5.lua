@@ -5,8 +5,8 @@ project "Proton Engine"
 	targetdir (solutionDir .. "/bin/" .. outputdir .. "/%{prj.name}")
 	objdir (solutionDir .. "/bin-int/" .. outputdir .. "/%{prj.name}")
 
-	-- pchheader "pch.h"
-	-- pchsource "src/pch.cpp" 
+	pchheader "ppch.h"
+	pchsource "src/ppch.cpp" 
 
 	files {
 		"include/**.h",

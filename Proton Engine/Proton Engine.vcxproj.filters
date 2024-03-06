@@ -24,10 +24,22 @@
     <ClInclude Include="include\Proton.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="include\Window.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ppch.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Core\Application.cpp">
       <Filter>src\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Window.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ppch.cpp">
+      <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

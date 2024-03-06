@@ -1,3 +1,4 @@
+#include "ppch.h"
 #include "Core/Application.h"
 
 namespace Proton {

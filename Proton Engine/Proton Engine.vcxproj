@@ -73,7 +73,8 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ppch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>PROTON_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>include;..\vendor\spdlog\include;..\vendor\glfw\include;..\vendor\glad\include;..\vendor\glm;..\vendor\assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -94,7 +95,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ppch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>PROTON_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>include;..\vendor\spdlog\include;..\vendor\glfw\include;..\vendor\glad\include;..\vendor\glm;..\vendor\assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -119,7 +121,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ppch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>PROTON_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>include;..\vendor\spdlog\include;..\vendor\glfw\include;..\vendor\glad\include;..\vendor\glm;..\vendor\assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -146,9 +149,15 @@
     <ClInclude Include="include\Core\Application.h" />
     <ClInclude Include="include\Core\EntryPoint.h" />
     <ClInclude Include="include\Proton.h" />
+    <ClInclude Include="include\Window.h" />
+    <ClInclude Include="include\ppch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Core\Application.cpp" />
+    <ClCompile Include="src\Window.cpp" />
+    <ClCompile Include="src\ppch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\vendor\glfw\GLFW.vcxproj">
