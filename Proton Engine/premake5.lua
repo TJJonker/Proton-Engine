@@ -39,6 +39,7 @@ project "Proton Engine"
 		staticruntime "on"
 
 		defines {
+			"PROTON_RENDERER_OPENGL"
 		}
 
 
