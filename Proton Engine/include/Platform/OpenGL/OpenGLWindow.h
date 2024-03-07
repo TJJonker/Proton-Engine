@@ -23,11 +23,15 @@ namespace Proton {
 		inline uint16_t GetWidth() const override { return m_WindowData.Width; }
 		inline uint16_t GetHeight() const override { return m_WindowData.Height; }
 
+		void SetSize(uint16_t width, uint16_t height) override;
+		void SetTitle(const char* title) override;
+		
 		void SetVSync(bool enabled) override;
 		bool IsVSyncEnabled() const override { return m_WindowData.VSync; }
 
 	private:
 		void Initialize(const WindowProps& props);
 		void Shutdown();
+
 	};
 }

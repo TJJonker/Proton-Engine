@@ -5,7 +5,8 @@
 class SandboxApplication : public Proton::Application {
 public:
 	SandboxApplication() {
-
+		GetWindow().SetTitle("My cool window.");
+		GetWindow().SetSize(1300, 100);
 	}
 
 	~SandboxApplication() {

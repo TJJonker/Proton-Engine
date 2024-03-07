@@ -17,6 +17,9 @@ namespace Proton {
 		virtual uint16_t GetWidth() const = 0;
 		virtual uint16_t GetHeight() const = 0;
 
+		virtual void SetSize(uint16_t width, uint16_t height) = 0;
+		virtual void SetTitle(const char* title) = 0;
+
 		virtual void SetVSync(bool enabled) = 0;
 		virtual bool IsVSyncEnabled() const = 0;
 

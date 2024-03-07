@@ -67,4 +67,14 @@ namespace Proton {
 	{
 		GLCall(glfwDestroyWindow(m_Window));
 	}
+
+	void OpenGLWindow::SetSize(uint16_t width, uint16_t height)
+	{
+		glfwSetWindowSize(m_Window, width, height);
+	}
+
+	void OpenGLWindow::SetTitle(const char* title)
+	{
+		glfwSetWindowTitle(m_Window, title);
+	}
 }

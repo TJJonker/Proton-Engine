@@ -4,7 +4,7 @@
 namespace Proton {
 	class Application
 	{
-	public:
+	private:
 		Window* m_Window;
 		bool m_IsRunning;
 
@@ -14,7 +14,7 @@ namespace Proton {
 
 		static Application& GetInstance();
 
-		Window& GetWindow();
+		Window& GetWindow() { return *m_Window; }
 
 		void Run();
 	};
