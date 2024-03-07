@@ -1,5 +1,6 @@
 #pragma once
 #include "ppch.h"
+#include "Core/Events/Event.h"
 
 namespace Proton {
 	struct WindowProps {
@@ -27,6 +28,10 @@ namespace Proton {
 		virtual void OnUpdate() = 0;
 
 		static Window* Create(const WindowProps& props = WindowProps());
+
+		using EventCallbackFunction = std::function<void(Event&)>;
+
+		virtual void SetEventCallbackFunction(const EventCallbackFunction& callback) = 0;
 	};
 }
 

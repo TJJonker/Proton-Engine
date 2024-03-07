@@ -50,6 +50,8 @@
     </ClInclude>
     <ClInclude Include="include\Debugging\Log.h" />
     <ClInclude Include="include\Debugging\Assertion.h" />
+    <ClInclude Include="include\Core\Events\Event.h" />
+    <ClInclude Include="include\Core\Events\WindowEvents.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Core\Application.cpp">

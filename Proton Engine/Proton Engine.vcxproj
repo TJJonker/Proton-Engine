@@ -148,6 +148,8 @@
   <ItemGroup>
     <ClInclude Include="include\Core\Application.h" />
     <ClInclude Include="include\Core\EntryPoint.h" />
+    <ClInclude Include="include\Core\Events\Event.h" />
+    <ClInclude Include="include\Core\Events\WindowEvents.h" />
     <ClInclude Include="include\Debugging\Assertion.h" />
     <ClInclude Include="include\Debugging\Log.h" />
     <ClInclude Include="include\Platform\OpenGL\OpenGLDebugger.h" />

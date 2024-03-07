@@ -59,9 +59,16 @@ namespace Proton {
 		}
 
 		glViewport(0, 0, props.Width, props.Height);
+
+		glfwSetWindowUserPointer(m_Window, &m_WindowData);
+
+		glfwSetWindowCloseCallback(m_Window, [](GLFWwindow* window) {
+			WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
+			WindowCloseEvent event;
+			data.EventCallback(event);
+			}
+		);
 	}
-
-
 
 	void OpenGLWindow::Shutdown()
 	{

@@ -16,7 +16,11 @@ namespace Proton {
 
 		Window& GetWindow() { return *m_Window; }
 
+		void OnEvent(Event& e);
+
 		void Run();
+
+		void CloseApplication();
 	};
 
 	Application* CreateApplication();

@@ -10,6 +10,8 @@ namespace Proton {
 			uint16_t Width;
 			uint16_t Height;
 			bool VSync;
+
+			EventCallbackFunction EventCallback;
 		};
 		
 		GLFWwindow* m_Window;
@@ -33,6 +35,8 @@ namespace Proton {
 	private:
 		void Initialize(const WindowProps& props);
 		void Shutdown();
+
+		void SetEventCallbackFunction(const EventCallbackFunction& callback) override { m_WindowData.EventCallback = callback; }
 
 	};
 }
