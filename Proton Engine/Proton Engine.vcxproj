@@ -155,18 +155,26 @@
     <ClInclude Include="include\Platform\OpenGL\OpenGLDebugger.h" />
     <ClInclude Include="include\Platform\OpenGL\OpenGLWindow.h" />
     <ClInclude Include="include\Proton.h" />
+    <ClInclude Include="include\Rendering\VertexBuffer.h" />
+    <ClInclude Include="include\Rendering\VertexBufferLayout.h" />
+    <ClInclude Include="include\Rendering\VertexBufferLayoutElement.h" />
     <ClInclude Include="include\Window.h" />
     <ClInclude Include="include\ppch.h" />
+    <ClInclude Include="include\Rendering\IndexBuffer.h" />
+    <ClInclude Include="include\Rendering\VertexArray.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Rendering\IndexBuffer.cpp" />
     <ClCompile Include="src\Core\Application.cpp" />
     <ClCompile Include="src\Debugging\Log.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLDebugger.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLWindow.cpp" />
+    <ClCompile Include="src\Rendering\VertexBuffer.cpp" />
     <ClCompile Include="src\Window.cpp" />
     <ClCompile Include="src\ppch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="src\Rendering\VertexArray.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\vendor\glfw\GLFW.vcxproj">

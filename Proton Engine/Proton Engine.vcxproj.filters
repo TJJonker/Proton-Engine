@@ -52,6 +52,11 @@
     <ClInclude Include="include\Debugging\Assertion.h" />
     <ClInclude Include="include\Core\Events\Event.h" />
     <ClInclude Include="include\Core\Events\WindowEvents.h" />
+    <ClInclude Include="include\Rendering\VertexBufferLayout.h" />
+    <ClInclude Include="include\Rendering\VertexBufferLayoutElement.h" />
+    <ClInclude Include="include\Rendering\VertexBuffer.h" />
+    <ClInclude Include="include\Rendering\IndexBuffer.h" />
+    <ClInclude Include="include\Rendering\VertexArray.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Core\Application.cpp">
@@ -70,5 +75,8 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\Debugging\Log.cpp" />
+    <ClCompile Include="src\Rendering\VertexBuffer.cpp" />
+    <ClCompile Include="src\Rendering\IndexBuffer.cpp" />
+    <ClCompile Include="src\Rendering\VertexArray.cpp" />
   </ItemGroup>
 </Project>

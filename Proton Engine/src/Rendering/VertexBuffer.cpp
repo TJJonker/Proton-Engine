@@ -1,3 +1,4 @@
+#include "ppch.h"
 #include "Rendering/VertexBuffer.h"
 
 namespace Proton::Rendering {
