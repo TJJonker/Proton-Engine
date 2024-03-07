@@ -1,10 +1,11 @@
 #pragma once
+#include "Window.h"
 
 namespace Proton {
 	class Application
 	{
 	public:
-		// Window 
+		Window* m_Window;
 		bool m_IsRunning;
 
 	public:
@@ -13,9 +14,9 @@ namespace Proton {
 
 		static Application& GetInstance();
 
-		//Window& GetWindow();
+		Window& GetWindow();
 
-		virtual void Run() {};
+		void Run();
 	};
 
 	Application* CreateApplication();

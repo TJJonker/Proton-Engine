@@ -2,13 +2,13 @@
 #include "Window.h"
 
 #ifdef PROTON_RENDERER_OPENGL
-	// Insert OpenGL Window file
+#include "Platform/OpenGL/OpenGLWindow.h"
 #endif
 
 namespace Proton {
 	Window* Window::Create(const WindowProps& props) {
 #ifdef PROTON_RENDERER_OPENGL
-		// Return OpenGL Window instance
+		return new OpenGLWindow(props);
 #endif
 		// Assert if no options
 		return nullptr;
