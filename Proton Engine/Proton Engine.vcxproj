@@ -148,12 +148,19 @@
   <ItemGroup>
     <ClInclude Include="include\Core\Application.h" />
     <ClInclude Include="include\Core\EntryPoint.h" />
+    <ClInclude Include="include\Debugging\Assertion.h" />
+    <ClInclude Include="include\Debugging\Log.h" />
+    <ClInclude Include="include\Platform\OpenGL\OpenGLDebugger.h" />
+    <ClInclude Include="include\Platform\OpenGL\OpenGLWindow.h" />
     <ClInclude Include="include\Proton.h" />
     <ClInclude Include="include\Window.h" />
     <ClInclude Include="include\ppch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Core\Application.cpp" />
+    <ClCompile Include="src\Debugging\Log.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLDebugger.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLWindow.cpp" />
     <ClCompile Include="src\Window.cpp" />
     <ClCompile Include="src\ppch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
