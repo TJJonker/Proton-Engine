@@ -25,6 +25,7 @@ namespace Proton {
 
 		void SetSize(uint16_t width, uint16_t height) override;
 		void SetTitle(const char* title) override;
+		void SetViewport(uint16_t width, uint16_t height) override;
 		
 		void SetVSync(bool enabled) override;
 		bool IsVSyncEnabled() const override { return m_WindowData.VSync; }

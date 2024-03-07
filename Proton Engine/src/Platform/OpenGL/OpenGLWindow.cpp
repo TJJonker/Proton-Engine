@@ -44,7 +44,7 @@ namespace Proton {
 		glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6); // Set minor version
 		glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE); // Switch to core profile
 
-		m_Window = glfwCreateWindow((int)props.Width, (int)props.Height, m_WindowData.Title.c_str(), nullptr, nullptr);
+		m_Window = glfwCreateWindow((int)props.Width, (int)props.Height, props.Title.c_str(), nullptr, nullptr);
 		glfwMakeContextCurrent(m_Window);
 
 		gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
@@ -58,7 +58,7 @@ namespace Proton {
 			glDebugMessageControl(GL_DONT_CARE, GL_DONT_CARE, GL_DONT_CARE, 0, nullptr, GL_TRUE);
 		}
 
-		glViewport(0, 0, 1280, 720);
+		glViewport(0, 0, props.Width, props.Height);
 	}
 
 
@@ -76,5 +76,10 @@ namespace Proton {
 	void OpenGLWindow::SetTitle(const char* title)
 	{
 		glfwSetWindowTitle(m_Window, title);
+	}
+
+	void OpenGLWindow::SetViewport(uint16_t width, uint16_t height)
+	{
+		glViewport(0, 0, 1280, 720);
 	}
 }
