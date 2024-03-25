@@ -1,5 +1,5 @@
 #pragma once
-
+#include "PCommon.h"
 
 namespace Proton::Rendering {
 	class IndexBuffer
@@ -10,8 +10,8 @@ namespace Proton::Rendering {
 		virtual void Bind() const = 0;
 		virtual void Unbind() const = 0;
 
-		virtual uint32_t GetCount() const = 0;
+		virtual U32 GetCount() const = 0;
 
-		static IndexBuffer* Create(uint32_t* indices, uint32_t size);
+		static IndexBuffer* Create(U32* indices, U32 size);
 	};
 }

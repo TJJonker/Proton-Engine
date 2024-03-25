@@ -1,6 +1,6 @@
 #pragma once
-#include "Rendering/VertexBuffer.h"
-#include "Rendering/IndexBuffer.h"
+#include "Rendering/VertexBuffer/VertexBuffer.h"
+#include "Rendering/IndexBuffer/IndexBuffer.h"
 
 namespace Proton::Rendering {
 	class VertexArray

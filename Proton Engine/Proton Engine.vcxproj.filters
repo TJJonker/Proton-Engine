@@ -52,11 +52,15 @@
     <ClInclude Include="include\Debugging\Assertion.h" />
     <ClInclude Include="include\Core\Events\Event.h" />
     <ClInclude Include="include\Core\Events\WindowEvents.h" />
-    <ClInclude Include="include\Rendering\VertexBufferLayout.h" />
-    <ClInclude Include="include\Rendering\VertexBufferLayoutElement.h" />
-    <ClInclude Include="include\Rendering\VertexBuffer.h" />
-    <ClInclude Include="include\Rendering\IndexBuffer.h" />
-    <ClInclude Include="include\Rendering\VertexArray.h" />
+    <ClInclude Include="include\Rendering\VertexBuffer\VertexBufferLayout.h" />
+    <ClInclude Include="include\Rendering\VertexBuffer\VertexBufferLayoutElement.h" />
+    <ClInclude Include="include\Rendering\VertexBuffer\VertexBuffer.h" />
+    <ClInclude Include="include\Rendering\IndexBuffer\IndexBuffer.h" />
+    <ClInclude Include="include\Rendering\VertexArray\VertexArray.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="include\Rendering\VertexBuffer\VertexBufferLayoutElementType.h" />
+    <ClInclude Include="include\PTypeDefiner.h" />
+    <ClInclude Include="include\PCommon.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Core\Application.cpp">
@@ -75,8 +79,11 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\Debugging\Log.cpp" />
-    <ClCompile Include="src\Rendering\VertexBuffer.cpp" />
+    <ClCompile Include="src\Rendering\VertexBuffer\VertexBuffer.cpp" />
     <ClCompile Include="src\Rendering\IndexBuffer.cpp" />
     <ClCompile Include="src\Rendering\VertexArray.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="src\Rendering\VertexBuffer\VertexBufferLayout.cpp" />
+    <ClCompile Include="src\Rendering\VertexBuffer\VertexBufferLayoutElement.cpp" />
   </ItemGroup>
 </Project>

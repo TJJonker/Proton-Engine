@@ -1,5 +1,5 @@
 #pragma once
-#include "Rendering/VertexBufferLayout.h"
+#include "Rendering/VertexBuffer/VertexBufferLayout.h"
 
 namespace Proton::Rendering {
 	class VertexBuffer 
@@ -14,6 +14,6 @@ namespace Proton::Rendering {
 		
 		virtual void SetVertexBufferLayout(VertexBufferLayout& bufferLayout) = 0;
 		
-		static VertexBuffer* Create(const void* vertices, size_t size);
+		static VertexBuffer* Create(const void* vertices, U32 size);
 	};
 }

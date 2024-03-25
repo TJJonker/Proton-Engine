@@ -147,29 +147,36 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="include\Core\Application.h" />
+    <ClInclude Include="include\PCommon.h" />
     <ClInclude Include="include\Core\EntryPoint.h" />
     <ClInclude Include="include\Core\Events\Event.h" />
     <ClInclude Include="include\Core\Events\WindowEvents.h" />
+    <ClInclude Include="include\PTypeDefiner.h" />
     <ClInclude Include="include\Debugging\Assertion.h" />
     <ClInclude Include="include\Debugging\Log.h" />
     <ClInclude Include="include\Platform\OpenGL\OpenGLDebugger.h" />
     <ClInclude Include="include\Platform\OpenGL\OpenGLWindow.h" />
     <ClInclude Include="include\Proton.h" />
-    <ClInclude Include="include\Rendering\VertexBuffer.h" />
-    <ClInclude Include="include\Rendering\VertexBufferLayout.h" />
-    <ClInclude Include="include\Rendering\VertexBufferLayoutElement.h" />
+    <ClInclude Include="include\Rendering\VertexBuffer\VertexBuffer.h" />
+    <ClInclude Include="include\Rendering\VertexBuffer\VertexBufferLayoutElementType.h" />
+    <ClInclude Include="include\Rendering\VertexBuffer\VertexBufferLayout.h" />
+    <ClInclude Include="include\Rendering\VertexBuffer\VertexBufferLayoutElement.h" />
     <ClInclude Include="include\Window.h" />
     <ClInclude Include="include\ppch.h" />
-    <ClInclude Include="include\Rendering\IndexBuffer.h" />
-    <ClInclude Include="include\Rendering\VertexArray.h" />
+    <ClInclude Include="include\Rendering\IndexBuffer\IndexBuffer.h" />
+    <ClInclude Include="include\Rendering\VertexArray\VertexArray.h" />
+    <ClInclude Include="Renderer.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Rendering\VertexBuffer\VertexBufferLayout.cpp" />
+    <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="src\Rendering\IndexBuffer.cpp" />
     <ClCompile Include="src\Core\Application.cpp" />
     <ClCompile Include="src\Debugging\Log.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLDebugger.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLWindow.cpp" />
-    <ClCompile Include="src\Rendering\VertexBuffer.cpp" />
+    <ClCompile Include="src\Rendering\VertexBuffer\VertexBuffer.cpp" />
+    <ClCompile Include="src\Rendering\VertexBuffer\VertexBufferLayoutElement.cpp" />
     <ClCompile Include="src\Window.cpp" />
     <ClCompile Include="src\ppch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
