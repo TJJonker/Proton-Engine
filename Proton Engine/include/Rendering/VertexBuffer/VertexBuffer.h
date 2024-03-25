@@ -10,7 +10,7 @@ namespace Proton::Rendering {
 		virtual void Bind() = 0;
 		virtual void Unbind() = 0;
 
-		virtual uint32_t GetSize() const = 0;
+		virtual U32 GetSize() const = 0;
 		
 		virtual void SetVertexBufferLayout(VertexBufferLayout& bufferLayout) = 0;
 		

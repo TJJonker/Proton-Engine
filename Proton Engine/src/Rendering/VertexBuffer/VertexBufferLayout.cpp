@@ -2,7 +2,7 @@
 #include "Rendering/VertexBuffer/VertexBufferLayout.h"
 
 namespace Proton::Rendering {
-	VertexBufferLayout::VertexBufferLayout(std::initializer_list<VertexBufferLayoutElement> elements)
+	VertexBufferLayout::VertexBufferLayout(InitializedElements elements)
 		: m_Stride(0)
 	{
 		CalculateStrideAndOffset(elements);
