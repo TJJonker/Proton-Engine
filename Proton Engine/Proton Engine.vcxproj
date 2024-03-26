@@ -146,6 +146,13 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="include\Rendering\Material\Material.h" />
+    <ClInclude Include="include\Rendering\Renderable\Renderable.h" />
+    <ClInclude Include="include\Rendering\Renderable\RenderableConfigs.h" />
+    <ClInclude Include="include\Rendering\Texture\MagnifyingFunction.h" />
+    <ClInclude Include="include\Rendering\Texture\MinifyingFunction.h" />
+    <ClInclude Include="include\Rendering\Texture\TextureChannels.h" />
+    <ClInclude Include="include\Rendering\Texture\TextureConfigs.h" />
     <ClInclude Include="include\Core\Application.h" />
     <ClInclude Include="include\PCommon.h" />
     <ClInclude Include="include\Core\EntryPoint.h" />
@@ -157,6 +164,7 @@
     <ClInclude Include="include\Platform\OpenGL\OpenGLDebugger.h" />
     <ClInclude Include="include\Platform\OpenGL\OpenGLWindow.h" />
     <ClInclude Include="include\Proton.h" />
+    <ClInclude Include="include\Rendering\Texture\TextureWrapFunction.h" />
     <ClInclude Include="include\Rendering\VertexBuffer\VertexBuffer.h" />
     <ClInclude Include="include\Rendering\VertexBuffer\VertexBufferLayoutElementType.h" />
     <ClInclude Include="include\Rendering\VertexBuffer\VertexBufferLayout.h" />
@@ -165,12 +173,15 @@
     <ClInclude Include="include\ppch.h" />
     <ClInclude Include="include\Rendering\IndexBuffer\IndexBuffer.h" />
     <ClInclude Include="include\Rendering\VertexArray\VertexArray.h" />
-    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="include\Rendering\Renderer.h" />
+    <ClInclude Include="include\Rendering\Texture\Texture.h" />
+    <ClInclude Include="include\Rendering\Shader\Shader.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Rendering\Shader\Shader.cpp" />
     <ClCompile Include="src\Rendering\VertexBuffer\VertexBufferLayout.cpp" />
     <ClCompile Include="Renderer.cpp" />
-    <ClCompile Include="src\Rendering\IndexBuffer.cpp" />
+    <ClCompile Include="src\Rendering\IndexBuffer\IndexBuffer.cpp" />
     <ClCompile Include="src\Core\Application.cpp" />
     <ClCompile Include="src\Debugging\Log.cpp" />
     <ClCompile Include="src\Platform\OpenGL\OpenGLDebugger.cpp" />
@@ -181,7 +192,8 @@
     <ClCompile Include="src\ppch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="src\Rendering\VertexArray.cpp" />
+    <ClCompile Include="src\Rendering\VertexArray\VertexArray.cpp" />
+    <ClCompile Include="src\Rendering\Texture\Texture.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\vendor\glfw\GLFW.vcxproj">

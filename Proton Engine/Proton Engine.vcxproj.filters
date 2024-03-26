@@ -57,10 +57,20 @@
     <ClInclude Include="include\Rendering\VertexBuffer\VertexBuffer.h" />
     <ClInclude Include="include\Rendering\IndexBuffer\IndexBuffer.h" />
     <ClInclude Include="include\Rendering\VertexArray\VertexArray.h" />
-    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="include\Rendering\Renderer.h" />
     <ClInclude Include="include\Rendering\VertexBuffer\VertexBufferLayoutElementType.h" />
     <ClInclude Include="include\PTypeDefiner.h" />
     <ClInclude Include="include\PCommon.h" />
+    <ClInclude Include="include\Rendering\Material\Material.h" />
+    <ClInclude Include="include\Rendering\Renderable\Renderable.h" />
+    <ClInclude Include="include\Rendering\Renderable\RenderableConfigs.h" />
+    <ClInclude Include="include\Rendering\Texture\TextureConfigs.h" />
+    <ClInclude Include="include\Rendering\Texture\TextureChannels.h" />
+    <ClInclude Include="include\Rendering\Texture\MinifyingFunction.h" />
+    <ClInclude Include="include\Rendering\Texture\MagnifyingFunction.h" />
+    <ClInclude Include="include\Rendering\Texture\Texture.h" />
+    <ClInclude Include="include\Rendering\Texture\TextureWrapFunction.h" />
+    <ClInclude Include="include\Rendering\Shader\Shader.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Core\Application.cpp">
@@ -80,10 +90,12 @@
     </ClCompile>
     <ClCompile Include="src\Debugging\Log.cpp" />
     <ClCompile Include="src\Rendering\VertexBuffer\VertexBuffer.cpp" />
-    <ClCompile Include="src\Rendering\IndexBuffer.cpp" />
-    <ClCompile Include="src\Rendering\VertexArray.cpp" />
+    <ClCompile Include="src\Rendering\IndexBuffer\IndexBuffer.cpp" />
+    <ClCompile Include="src\Rendering\VertexArray\VertexArray.cpp" />
     <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="src\Rendering\VertexBuffer\VertexBufferLayout.cpp" />
     <ClCompile Include="src\Rendering\VertexBuffer\VertexBufferLayoutElement.cpp" />
+    <ClCompile Include="src\Rendering\Texture\Texture.cpp" />
+    <ClCompile Include="src\Rendering\Shader\Shader.cpp" />
   </ItemGroup>
 </Project>
